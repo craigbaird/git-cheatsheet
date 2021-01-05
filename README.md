@@ -13,7 +13,7 @@ git add .
 git commit -m "Changes..."
 
 // when you're done with the feature
-git push -u origin feature-task1
+git push origin feature-task1
 
 // pull any changes from master
 git pull origin master
@@ -26,7 +26,7 @@ git merge --no-ff master
 // switch back to master and merge changes
 git checkout master
 git merge --no-ff feature-task1
-git push -u origin master
+git push origin master
 
 // delete old branches
 // ONLY after they have been merged
@@ -47,4 +47,15 @@ git fetch
 // show status
 git status
 
+// undo commit (save changes)
+git reset --soft HEAD~1
+
+// undo commit (discard changes)
+git reset --hard HEAD~1
+
+// unstage file
+git reset <commit> -- <path>
+
+// unstage all files
+git reset
 ```
